@@ -1,0 +1,27 @@
+{
+  "name": "vending-machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "solcjs --abi --include-path node_modules/ --base-path . ./contracts/Roulette.sol --output-dir ../nextjs-web3-react/blockchain/build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "@truffle/hdwallet": "^0.1.2",
+    "@truffle/hdwallet-provider": "^2.1.10",
+    "dotenv": "^16.0.3",
+    "solc": "^0.8.19",
+    "truffle-assertions": "^0.9.2"
+  },
+  "devDependencies": {
+    "coverage": "^0.4.1",
+    "solidity": "^0.0.1",
+    "solidity-coverage": "^0.8.2",
+    "truffle-plugin-verify": "^0.6.3"
+  }
+}
